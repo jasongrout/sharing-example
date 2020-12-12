@@ -7,7 +7,7 @@ const data = require("./package.json");
 module.exports = {
   entry: {},
   mode: "development",
-  devtool: "source-map",
+  devtool: false,
   devServer: {
     contentBase: path.join(__dirname, "dist"),
     port: 3003,
@@ -40,9 +40,10 @@ module.exports = {
           // value pulled from package.json, the main package entry point
           import: `./${path.join(data.main)}`,
         },
-        [`${data.name}/`]: {
+        [`${data.name}/otherimport`]: {
           requiredVersion: data.version,
           version: data.version,
+          import: "./otherimport",
         },
       },
     }),
