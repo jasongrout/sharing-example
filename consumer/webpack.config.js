@@ -20,6 +20,18 @@ module.exports = {
       name: "LIBRARY_NAME",
     },
   },
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        vendor: {
+          test: /provider/,
+          name: "vendors",
+          chunks: "all",
+        },
+      },
+    },
+  },
+
   plugins: [
     new ModuleFederationPlugin({
       name: "MODULE_FEDERATION_NAME",
