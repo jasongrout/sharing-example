@@ -1,2 +1,2 @@
-console.log('Other import run');
-export const A = 1;
+export const A = Math.random();
+console.log(`A is ${A}`);

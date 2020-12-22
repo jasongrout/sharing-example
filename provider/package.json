@@ -11,6 +11,14 @@
   "author": "",
   "license": "BSD-3-Clause",
   "dependencies": {
+    "bundle": "^1",
+    "bundle-singleton": "^1",
+    "bundle-strict": "^1",
+    "bundle-strict-singleton": "^1",
+    "not-bundle-strict-singleton": "^1",
+    "singleton": "^1",
+    "strict": "^1",
+    "strict-singleton": "^1"
   },
   "devDependencies": {
     "css-loader": "^5.0.1",

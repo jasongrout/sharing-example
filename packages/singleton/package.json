@@ -1,0 +1,19 @@
+{
+  "name": "singleton",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  
+  "scripts": {
+    "clean": "rm -rf dist/*",
+    "build": "npm run clean"
+  },
+  "author": "",
+  "license": "BSD-3-Clause",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "webpack": "^5",
+    "webpack-cli": "^4"
+  }
+}

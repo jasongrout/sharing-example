@@ -56,6 +56,42 @@ module.exports = {
           version: data.version,
           import: "./otherimport",
         },
+        bundle: {
+          strictVersion: false,
+          singleton: false,
+        },
+        "bundle-singleton": {
+          strictVersion: false,
+          singleton: true,
+        },
+        "bundle-strict": {
+          strictVersion: true,
+          singleton: false,
+        },
+        "bundle-strict-singleton": {
+          strictVersion: true,
+          singleton: true,
+        },
+        "not-bundle-strict-singleton": {
+          import: false,
+          strictVersion: false,
+          singleton: false,
+        },
+        singleton: {
+          import: false,
+          strictVersion: false,
+          singleton: true,
+        },
+        strict: {
+          import: false,
+          strictVersion: true,
+          singleton: false,
+        },
+        "strict-singleton": {
+          import: false,
+          strictVersion: true,
+          singleton: true,
+        },
       },
     }),
   ],

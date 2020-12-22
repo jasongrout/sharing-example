@@ -3,7 +3,8 @@
   "workspaces": {
     "packages": [
       "consumer",
-      "provider"
+      "provider",
+      "packages/*"
     ]
   },
   "scripts": {
